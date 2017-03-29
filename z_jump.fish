@@ -1,4 +1,4 @@
-set Z_SCRIPT_PATH /usr/local/etc/profile.d/z.sh
+set -l Z_SCRIPT_PATH /usr/local/etc/profile.d/z.sh
 
 function z_jump.check --on-variable PWD --description 'Setup z on directory change'
   status --is-command-substitution; and return
